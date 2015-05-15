@@ -5,7 +5,7 @@ MAINTAINER Viacheslav Pryimak <vpryimak@intropro.com>
 ################## BEGIN INSTALLATION ######################
 RUN yum -y update && yum clean all && \
     yum -y install epel-release && yum -y update && \
-    yum -y install sudo mc net-tools supervisor openssh-server openssh-clients \
+    yum -y install sudo mc net-tools supervisor openssh-server openssh-clients mariadb \
     bind-utils bzip2 curl e2fsprogs expect bind-utils bzip2 curl git gitflow krb5-libs krb5-workstation libselinux-python \
     libstdc++ lsof net-tools nmap ntp openldap-clients psmisc python-pip python-setuptools sysstat tmux tar unzip vim-common vim wget && \
     yum clean all && \
