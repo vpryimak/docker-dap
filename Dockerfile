@@ -18,7 +18,7 @@ ADD ./start.sh /start.sh
 ADD ./data/scripts /opt/dap/scripts
 RUN chmod +x /start.sh
 RUN sed -i '/pam_loginuid\.so/s/required/optional/' /etc/pam.d/sshd
-RUN cd /opt/dap && ln -s install/apache-tomcat-8.0.20 tomcat && ln -s install/flyway-3.1 flyway && mkdir dap-log && touch dap-log/dap.log
+RUN cd /opt/dap && ln -s install/apache-tomcat-8.0.20 tomcat && ln -s install/flyway-3.1 flyway && mkdir dap-log repository  && touch dap-log/dap.log
 
 EXPOSE 22
 
